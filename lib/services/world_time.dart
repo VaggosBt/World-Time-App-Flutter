@@ -36,7 +36,7 @@ class WorldTime{
       // create DateTime object
       DateTime now = DateTime.parse(datetime.substring(0,26));
       //print(int.parse(offset));
-      //print('now: $now');
+      print('now: $now');
 
       //set the time property
       isDaytime = now.hour > 6 && now.hour < 20 ? true : false ;
