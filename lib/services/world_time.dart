@@ -10,7 +10,7 @@ class WorldTime{
   late String url ;   // the location url for api endpoint
   late bool isDaytime; // true or false if daytime or not
 
-  WorldTime(this.location,  this.flag, this.url);
+  WorldTime(this.url,  this.location, this.flag);
 
 
 
@@ -19,6 +19,9 @@ class WorldTime{
     try {
 
       //make the api request
+      print('url: $url');
+      print('location: $location');
+      print('flag: $flag');
       Uri dataUrl = Uri.parse('http://worldtimeapi.org/api/timezone/$url');
       Response response = await get(dataUrl);
       Map data = jsonDecode(response.body);
