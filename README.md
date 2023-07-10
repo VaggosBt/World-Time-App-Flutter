@@ -1,6 +1,6 @@
-# world_time
+# World Time App 
 
-A new Flutter project.
+A Flutter project for the creation of a simple World Time App with Dart.
 
 ## Getting Started
 
